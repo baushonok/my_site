@@ -1,0 +1,66 @@
+section {
+	width: 100%;
+	margin-bottom: 32px;
+
+	&:first-of-type {
+		margin-top: 24px;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&.skills {
+		ul {
+			$indent: 4px;
+			$height: 25px;
+
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: space-between;
+
+			margin: -$indent;
+
+			> li {
+				flex-grow: 1;
+				max-width: ~"calc(100% - ${indent} * 4)";
+				height: $height;
+				padding: $indent;
+				margin: $indent;
+
+				text-align: center;
+				white-space: nowrap;
+				line-height: $height;
+
+				background-color: $clr-plate;
+				border: 1px solid $clr-fg-washy;
+
+				> a {
+					color: black;
+				}
+			}
+		}
+	}
+
+	&.portfolio {
+		nav {
+			display: inline-block;
+
+			li {
+				> span.hint {
+					display: none;
+					margin-left: 10px;
+					font-size: 80%;
+					color: $clr-fg-washy;
+				}
+
+				&:hover {
+					> span.hint {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}

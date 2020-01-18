@@ -1,46 +1,45 @@
-footer > ul.social {
-	position: relative;
-	top: 50%;
+.social {
+  position: relative;
+  top: 50%;
 
-	display: block;
+  display: block;
 
-	transform: translateY(-50%);
+  transform: translateY(-50%);
 
-	> li {
-		display: inline-block;
+  &__item {
+    display: inline-block;
 
-		margin-right: 12px;
+    margin-right: 12px;
 
-		&:last-of-type {
-			margin-right: auto;
-		}
+    &:last-of-type {
+      margin-right: auto;
+    }
+  }
 
-		> a {
-			$size: 50px;
+  &__github,
+  &__linkedin,
+  &__habr-career {
+    $size: 50px;
 
-			display: block;
-			overflow: hidden;
+    display: block;
+    overflow: hidden;
 
-			width: $size;
-			height: $size;
+    width: $size;
+    height: $size;
 
-			text-indent: $size;
-			white-space: nowrap;
+    text-indent: $size;
+    white-space: nowrap;
 
-			background-repeat: no-repeat;
-			background-size: 50px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 50px;
+  }
 
-			&.vkontakte {
-				background-image: url("/styles/images/vk-logo.svg");
-			}
+  &__linkedin {
+    background-image: url("/styles/images/social-logos/linkedin.svg");
+  }
 
-			&.linkedin {
-				background-image: url("/styles/images/linkedin-logo.svg");
-			}
-
-			&.github {
-				background-image: url("/styles/images/github-logo.svg");
-			}
-		}
-	}
+  &__github {
+    background-image: url("/styles/images/social-logos/github.svg");
+  }
 }

@@ -11,5 +11,5 @@ gulp.task('default', () => {
     .pipe( sourcemaps.init() )
     .pipe( postcss([ precss, autoprefixer ]) )
     .pipe( sourcemaps.write('.') )
-    .pipe( gulp.dest('build/') )
+    .pipe( gulp.dest('build/styles/') )
 });

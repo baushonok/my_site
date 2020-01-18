@@ -1,3 +1,4 @@
+@import "../reset.css";
 @import "base/colors.css";
 @import "base/fonts.css";
 @import "base/layout.css";
@@ -6,4 +7,5 @@
 @import "components/avatar.css";
 @import "components/city.css";
 @import "components/sections.css";
+@import "components/bricks.css";
 @import "components/socials.css";

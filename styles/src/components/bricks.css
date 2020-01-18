@@ -1,0 +1,30 @@
+.bricks {
+	$indent: 4px;
+	$height: 25px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+	margin: -$indent;
+
+	&__item {
+		flex-grow: 1;
+		max-width: ~"calc(100% - ${indent} * 4)";
+		height: $height;
+		padding: $indent;
+		margin: $indent;
+
+		text-align: center;
+		white-space: nowrap;
+		line-height: $height;
+
+		background-color: $clr-plate;
+		border: 1px solid $clr-fg-washy;
+    }
+    
+    &__link {
+        color: black;
+    }
+}

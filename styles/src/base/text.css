@@ -7,10 +7,14 @@ a {
 	}
 }
 
-span.nowrap {
+.nowrap {
 	white-space: nowrap;
 }
 
-span.bold {
+.bold {
 	font-weight: $weight-font-bold;
+}
+
+.hidden {
+	display: none;
 }

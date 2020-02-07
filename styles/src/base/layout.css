@@ -7,10 +7,8 @@ html {
 
 body {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	box-sizing: border-box;
 	min-width: 280px;
 	max-width: 980px;
@@ -32,6 +30,7 @@ body {
 
 .page-header {
 	position: relative;
+	margin-bottom: 48px;
 	text-align: center;
 }
 

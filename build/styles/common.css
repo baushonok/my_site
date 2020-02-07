@@ -115,14 +115,11 @@ html {
 body {
 	display: -webkit-box;
 	display: flex;
-	-webkit-box-orient: horizontal;
+	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	        flex-direction: row;
-	flex-wrap: wrap;
-	-webkit-box-align: start;
-	        align-items: flex-start;
-	-webkit-box-pack: center;
-	        justify-content: center;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	        align-items: center;
 	box-sizing: border-box;
 	min-width: 280px;
 	max-width: 980px;
@@ -145,6 +142,7 @@ body {
 	}
 .page-header {
 	position: relative;
+	margin-bottom: 48px;
 	text-align: center;
 }
 .page-footer {

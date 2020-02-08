@@ -247,6 +247,8 @@ section:last-of-type {
 
   display: block;
 
+  text-align: center;
+
   -webkit-transform: translateY(-50%);
 
           transform: translateY(-50%);
